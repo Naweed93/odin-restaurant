@@ -8,4 +8,21 @@ contentContainer.classList.add('contentContainer');
 
 document.body.appendChild(navComponent());
 document.body.appendChild(contentContainer);
-contentContainer.appendChild(aboutContent());
+contentContainer.appendChild(homeContent());
+
+const home = document.querySelectorAll('.home')[0];
+const foods = document.querySelectorAll('.foods')[0];
+const about = document.querySelectorAll('.about')[0];
+
+home.addEventListener('click', ()=>{
+    contentContainer.removeChild(contentContainer.childNodes[0]);
+    contentContainer.appendChild(homeContent());
+});
+foods.addEventListener('click', ()=>{
+    contentContainer.removeChild(contentContainer.childNodes[0]);
+    contentContainer.appendChild(foodContent());
+});
+about.addEventListener('click', ()=>{
+    contentContainer.removeChild(contentContainer.childNodes[0]);
+    contentContainer.appendChild(aboutContent());
+});
