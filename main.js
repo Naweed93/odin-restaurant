@@ -10,6 +10,16 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/foods.js":
+/*!**********************!*\
+  !*** ./src/foods.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"foodContent\": () => (/* binding */ foodContent)\n/* harmony export */ });\nfunction foodContent(){\n    const foodContainer = document.createElement('div');\n    const food = [];\n    for (let i = 0; i<4; i++){\n        food[i] = document.createElement('div');\n        const foodData = document.createElement('div');\n        const foodImage = document.createElement('span');\n        const foodTitle = document.createElement('h2');\n        const foodDescription = document.createElement('p');\n        const foodPrice = document.createElement('p');\n\n        food[i].classList.add(`food-${i}`);\n        foodData.classList.add('food-data');\n        foodPrice.classList.add('price');\n        foodDescription.classList.add('description');\n\n        if(i%2){\n            food[i].appendChild(foodImage);\n            food[i].appendChild(foodData);\n        }\n        else{\n            food[i].appendChild(foodData);\n            food[i].appendChild(foodImage);\n        }\n\n        foodTitle.innerText = \"Pizza\";\n        foodDescription.innerText = \"Pizza is made by blah blah blah and its so healthy! \\n Try to eat a pizza every day if u wanna live +100 years.\"\n        foodPrice.innerHTML = \"10.<span>88</span> $\"\n\n        foodData.appendChild(foodTitle);\n        foodData.appendChild(foodDescription);\n        foodData.appendChild(foodPrice);\n        foodContainer.appendChild(food[i]);\n    }\n\n    foodContainer.classList.add('foodContainer');\n    return foodContainer;\n}\n\n//# sourceURL=webpack://odin-restaurant/./src/foods.js?");
+
+/***/ }),
+
 /***/ "./src/home.js":
 /*!*********************!*\
   !*** ./src/home.js ***!
@@ -26,7 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _navbar_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./navbar.js */ \"./src/navbar.js\");\n/* harmony import */ var _home_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home.js */ \"./src/home.js\");\n\n\n\nconst contentContainer =document.createElement('div');\ncontentContainer.classList.add('contentContainer');\n\ndocument.body.appendChild((0,_navbar_js__WEBPACK_IMPORTED_MODULE_0__.navComponent)());\ndocument.body.appendChild(contentContainer);\ncontentContainer.appendChild((0,_home_js__WEBPACK_IMPORTED_MODULE_1__.homeContent)());\n\n//# sourceURL=webpack://odin-restaurant/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _navbar_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./navbar.js */ \"./src/navbar.js\");\n/* harmony import */ var _home_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home.js */ \"./src/home.js\");\n/* harmony import */ var _foods_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./foods.js */ \"./src/foods.js\");\n\n\n\n\nconst contentContainer =document.createElement('div');\ncontentContainer.classList.add('contentContainer');\n\ndocument.body.appendChild((0,_navbar_js__WEBPACK_IMPORTED_MODULE_0__.navComponent)());\ndocument.body.appendChild(contentContainer);\ncontentContainer.appendChild((0,_foods_js__WEBPACK_IMPORTED_MODULE_2__.foodContent)());\n\n//# sourceURL=webpack://odin-restaurant/./src/index.js?");
 
 /***/ }),
 
