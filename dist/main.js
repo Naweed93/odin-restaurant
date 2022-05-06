@@ -10,6 +10,16 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/about.js":
+/*!**********************!*\
+  !*** ./src/about.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"aboutContent\": () => (/* binding */ aboutContent)\n/* harmony export */ });\nfunction aboutContent(){\n    const aboutContainer = document.createElement('div');\n    const aboutText = document.createElement('p');\n\n    aboutContainer.classList.add('about-container');\n    aboutContainer.appendChild(aboutText);\n\n    aboutText.innerText = \"Under Construction!\";\n\n    return aboutContainer;\n}\n\n//# sourceURL=webpack://odin-restaurant/./src/about.js?");
+
+/***/ }),
+
 /***/ "./src/foods.js":
 /*!**********************!*\
   !*** ./src/foods.js ***!
@@ -36,7 +46,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _navbar_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./navbar.js */ \"./src/navbar.js\");\n/* harmony import */ var _home_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home.js */ \"./src/home.js\");\n/* harmony import */ var _foods_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./foods.js */ \"./src/foods.js\");\n\n\n\n\nconst contentContainer =document.createElement('div');\ncontentContainer.classList.add('contentContainer');\n\ndocument.body.appendChild((0,_navbar_js__WEBPACK_IMPORTED_MODULE_0__.navComponent)());\ndocument.body.appendChild(contentContainer);\ncontentContainer.appendChild((0,_foods_js__WEBPACK_IMPORTED_MODULE_2__.foodContent)());\n\n//# sourceURL=webpack://odin-restaurant/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _navbar_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./navbar.js */ \"./src/navbar.js\");\n/* harmony import */ var _home_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home.js */ \"./src/home.js\");\n/* harmony import */ var _foods_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./foods.js */ \"./src/foods.js\");\n/* harmony import */ var _about_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./about.js */ \"./src/about.js\");\n\n\n\n\n\nconst contentContainer =document.createElement('div');\ncontentContainer.classList.add('contentContainer');\n\ndocument.body.appendChild((0,_navbar_js__WEBPACK_IMPORTED_MODULE_0__.navComponent)());\ndocument.body.appendChild(contentContainer);\ncontentContainer.appendChild((0,_about_js__WEBPACK_IMPORTED_MODULE_3__.aboutContent)());\n\n//# sourceURL=webpack://odin-restaurant/./src/index.js?");
 
 /***/ }),
 
